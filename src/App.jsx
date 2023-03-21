@@ -1,16 +1,14 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
+import Lexicon from './components/Lexicon'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <h4>Lexicon</h4>
-        </div>
+    <div className="components">
+      <Lexicon/>
     </div>
   )
 }
 
-export default App
+export default App;

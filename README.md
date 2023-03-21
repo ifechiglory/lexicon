@@ -19,4 +19,3 @@ Lexicon is a dictionary app that provides word meanings, pronunciations, parts o
 ### Who can use Lexicon
 
 Lexicon can be used by both adults and children
-
