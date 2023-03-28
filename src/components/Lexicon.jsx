@@ -25,12 +25,12 @@ const Lexicon = (props) => {
   return(
     <div className="container-fluid p-0">
       <div className='row header'>
-        <div className='col-xl-7 col-lg-7 col-md-5 col-sm-6 col-6 py-3'> 
+        <div className='col-xl-7 col-lg-7 col-md-5 col-sm-5 col-5 py-3'> 
          {/* <h1 className="logo">lexicon</h1> */}
          <img src={logo} className='img-fluid' alt="logo"></img>
         </div>
 
-        <div className='col-xl-5 col-lg-5 col-md-7 col-sm-6 col-6 search'>
+        <div className='col-xl-5 col-lg-5 col-md-7 col-sm-7 col-7 search'>
             <form onSubmit = {(e)=> {search(e.preventDefault());}}>
               <div className='input-group my-auto'>
                 <input className='form-control p-3' placeholder='Search for a word' onChange={(e) => {setSearchWord(e.target.value);}}></input>
