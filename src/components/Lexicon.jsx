@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Result from "./Result";
-import logo from '../assets/logo.png'
 import {IoIosSearch} from 'react-icons/io'
 import "./Lexicon.css";
+import logo from '../assets/logo.png'
 
 const Lexicon = (props) => {
 
@@ -17,29 +17,33 @@ const Lexicon = (props) => {
       setData(response.data[0]);
     })
     .catch(() =>{
-      alert(`😮 Sorry, we can't find the definition of "${searchWord}" 
+      alert(`Sorry, we can't find the definition of "${searchWord}" 
       Check your spelling and try again`);
     })
   }
 
   return(
-    <div className="container-fluid">
-      <div className='row'>
-        <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12 header-img pt-5'> 
-          <img className='img-fluid text-center m-auto' alt='logo' src={logo}></img>
+    <div className="container-fluid p-0">
+      <div className='row header'>
+        <div className='col-xl-7 col-lg-7 col-md-5 col-sm-6 col-6 py-3'> 
+         {/* <h1 className="logo">lexicon</h1> */}
+         <img src={logo} className='img-fluid' alt="logo"></img>
         </div>
 
-        <div className='col-xl-8 col-lg-8 col-md-6 col-sm-12 search'>
+        <div className='col-xl-5 col-lg-5 col-md-7 col-sm-6 col-6 search'>
             <form onSubmit = {(e)=> {search(e.preventDefault());}}>
-              <div className='input-group w-75 mx-auto p-2'>
+              <div className='input-group my-auto'>
                 <input className='form-control p-3' placeholder='Search for a word' onChange={(e) => {setSearchWord(e.target.value);}}></input>
                 <button className='btn btn-outline-secondary'  onClick={() => {search();}}><IoIosSearch/></button>
               </div>
           </form>
+        </div>
+      </div>
+
+      <div className="row result px-5 pt-5">
+        <div className="col-12">
           {searchWord && (
-            <div className="results p-5">
-              <Result result ={data} search={search} setSearchWord={setSearchWord}/>  
-            </div>        
+            <Result result ={data} search={search} setSearchWord={setSearchWord}/>         
           )}
         </div>
       </div>

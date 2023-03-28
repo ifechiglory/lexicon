@@ -12,12 +12,14 @@ const Phonetic = (props) => {
 
   return (
     <div className="Phonetic">
-      <button className="btn btn-outline">{props.phonetic.audio && (
-        <RxSpeakerLoud className="playIcon" onClick={start}/>
-      )}{" "}
+      <button className="btn btn-outline">
+          {props.phonetic.audio && (
+          <RxSpeakerLoud className="playIcon" onClick={start}/>
+        )}{" "}
       </button>
+
       {props.phonetic.text !== undefined && (
-        <p className="text">{props.phonetic.text}</p>
+        <span className="text">{props.phonetic.text}</span>
       )}
     </div>
   );
