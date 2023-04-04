@@ -1,5 +1,5 @@
 import React from "react";
-import { RxSpeakerLoud } from 'react-icons/rx'
+import { BsPlayCircle } from 'react-icons/bs'
 import "./Lexicon.css";
 
 const Phonetic = (props) => {
@@ -14,7 +14,7 @@ const Phonetic = (props) => {
     <div className="Phonetic">
       <button className="btn btn-outline">
           {props.phonetic.audio && (
-          <RxSpeakerLoud className="playIcon" onClick={start}/>
+          <BsPlayCircle className="playIcon" onClick={start}/>
         )}{" "}
       </button>
 

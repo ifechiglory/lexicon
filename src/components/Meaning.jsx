@@ -4,8 +4,11 @@ import "./Lexicon.css";
 
 const Meaning = (props) => {
   return (
-    <div className="Meaning border-top py-3">
-      <h4>{props.meaning.partOfSpeech}</h4>
+    <div className="Meaning py-3">
+      <h3 className="fw-bold py-3 d-inline-block">{props.meaning.partOfSpeech}</h3>
+      <hr className="d-inline-block w-75 ms-5"></hr>
+
+      <p className="text-muted">Meaning</p>
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <ul key={index}>

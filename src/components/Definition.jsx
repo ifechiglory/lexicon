@@ -5,9 +5,9 @@ import "./Definition.css";
 
 const Definition = (props)=> {
   return (
-    <div className="Definition">
+    <div className="Definition adaptive">
       <div>{props.definition.definition}</div>
-      <p>
+      <p className="text-muted">
         <em className="example">{props.definition.example}</em>
       </p>
       <Synonym

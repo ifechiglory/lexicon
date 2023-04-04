@@ -2,3 +2,9 @@
   color: #28374d;
   font-size: 15px;
 }
+
+@media (prefers-color-scheme: dark){
+  .Definition .example{
+    color:aquamarine;
+  }
+}

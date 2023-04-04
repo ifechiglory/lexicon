@@ -14,18 +14,14 @@ const Synonym = (props) => {
   if (props.synonym && props.synonym.length > 0) {
     return (
       <div className="Synonym">
-        <span>Synonyms:</span>
-        <ul>
-          {props.synonym.map(function (synonym, index) {
+        <span className="text-muted">Synonyms: 
+        {props.synonym.map(function (synonym, index) {
             return (
-              <li key={index}>
-                <a href="/" onClick={handleClick}>
-                  {synonym}
-                </a>
-              </li>
+              <span className="me-2 text-muted" key={index}> {synonym}</span>
+        
             );
           })}
-        </ul>
+        </span>
       </div>
     );
   } else {

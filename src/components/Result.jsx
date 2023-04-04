@@ -4,6 +4,7 @@ import Meaning from "./Meaning";
 import './Lexicon.css'
 
 const Result = (props) => {
+  
   if (props.result) {
     return (
       <div className="Result">

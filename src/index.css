@@ -1,5 +1,4 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -17,4 +16,41 @@
 body{
   height: 100vh;
   display: flex;
+}
+
+@media (prefers-color-scheme: dark){
+  .adaptive{
+    background-color: #242424;
+    color: #fff;
+  }
+
+  select{
+    background-color: transparent !important;
+    color: inherit !important;
+  }
+
+  .btn{
+    color: #fff;
+  }
+
+  .result{
+    background-color: inherit !important;
+    color: inherit;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .adaptive {
+    background: #FFF;
+    color: #333;
+  }
+
+  .result{
+    background-color: inherit;
+    color: inherit;
+  }
+
+  option{
+    color: #fff !important
+  }
 }
