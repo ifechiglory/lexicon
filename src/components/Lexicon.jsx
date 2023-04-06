@@ -51,7 +51,7 @@ const Lexicon = (props) => {
       </div>
 
       {searchWord && (
-        <div className="row result w-xl-75 w-lg-75 w-md-75 w-100 mx-xl-auto mx-lg-auto mx-md-auto mx-auto px-3 pt-5 adaptive">
+        <div className="row result w-xl-75 w-lg-75 w-md-75 w-100 mx-xl-auto mx-lg-auto mx-md-auto mx-auto px-3 pt-5">
           <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 mx-auto">
             <Result result ={data} search={search} setSearchWord={setSearchWord}/>         
           </div>

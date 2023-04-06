@@ -24,7 +24,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{theme, toggleTheme}}>
-    <div className={`components`} id={theme}>
+    <div className={`components adaptive`} id={theme}>
 
     <div className='row header px-xl-2 px-lg-2 px-md-2 px-sm-4 p-4 py-5 justify-content-evenly'>
         <div className='col-xl-6 col-lg-6 col-md-6 col-sm-2 col-2'> 

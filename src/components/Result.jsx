@@ -7,7 +7,7 @@ const Result = (props) => {
   
   if (props.result) {
     return (
-      <div className="Result border-bottom my-2">
+      <div className="Result border-bottom mb-1">
         <section>
           <h2 className="word">{props.result.word}</h2>
 
