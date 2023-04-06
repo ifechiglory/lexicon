@@ -39,6 +39,7 @@
 
 input:focus{
   outline: none;
+  box-shadow: none !important;
 }
 
 button:hover{
@@ -94,21 +95,30 @@ option{
   }
 
   select{
-    background-color: inherit !important;
+    background-color: #1f1f1fc7 !important;
     color: inherit !important;
   }
 
+  select option{
+    background-color: #1f1f1fc7 !important;
+    padding: 0;
+  }
+
   #button-addon2{
-    background-color: #1f1f1f !important;
-    color: #a65fdd !important;
+    background-color: transparent !important;
   }
 
   .form-control{
-    background-color: #1f1f1f !important;
+    background-color: transparent !important;
     color: #ccc !important;
   }
 
   .form-control::placeholder{
     color: #ccc !important;
   }
+
+  .input-group{
+    background-color: #1f1f1fc7 !important;
+  }
 }
+

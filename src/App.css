@@ -10,12 +10,12 @@
 }
 
 #light{
-  background-color: #fff;
+  background: #fff;
   color: #242424 !important;
 }
 
 #dark{
-  background-color: #050505;
+  background: #050505;
   color: #ccc !important;
 }
 
@@ -24,3 +24,4 @@
   justify-content: end;
   align-items: center;
 }
+

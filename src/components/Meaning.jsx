@@ -5,7 +5,7 @@ import '../index.css'
 
 const Meaning = (props) => {
   return (
-    <div className="Meaning py-3">
+    <div className="Meaning">
       <h3 className="fw-bold py-3 d-inline-block">{props.meaning.partOfSpeech}</h3>
       <hr className="d-inline-block w-xl-75 w-lg-75 w-md-75 w-75 ms-xl-5 ms-lg-5 ms-md-5 ms-2"></hr>
 

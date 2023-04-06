@@ -36,7 +36,7 @@ function App() {
           onChange={(e) => changeFont(e)} defaultValue={serif}>
             <option value="serif">Serif</option>
             <option value="sans">Sans Serif</option>
-            <option value="monospace">Monospace</option>
+            <option value="monospace">Mono</option>
           </select>
         
           <div className='switch'>
@@ -44,7 +44,12 @@ function App() {
           <Switch 
             defaultChecked={theme === 'dark'} 
             onChange={toggleTheme}
-            sx={{backgroundColor: '#a65fdd'}}
+            sx={{
+              bakgroundColor: 'gray',
+              'input:checked ~ &': {
+                backgroundColor: '#a65fdd',
+              },
+            }}
           />
           </div>
           <BsMoon fontSize={40}/>
