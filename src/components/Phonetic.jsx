@@ -12,9 +12,9 @@ const Phonetic = (props) => {
 
   return (
     <div className="Phonetic">
-      <button className="btn btn-outline">
+      <button className="btn btn-* play">
           {props.phonetic.audio && (
-          <BsPlayCircle className="playIcon" onClick={start}/>
+          <BsPlayCircle className="playIcon" onClick={start} fontSize={30} color='#a65fdd'/>
         )}{" "}
       </button>
 

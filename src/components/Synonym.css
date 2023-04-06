@@ -1,3 +1,7 @@
 .Synonym span {
   font-size: 14px;
 }
+
+span.syn{
+  color: #a65fdd !important;
+}

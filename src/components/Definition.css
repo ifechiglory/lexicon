@@ -1,16 +1,4 @@
 .Definition .example {
-  color: #28374d;
+  color: #a65fdd;
   font-size: 15px;
-}
-
-@media (prefers-color-scheme: dark){
-  .Definition .example{
-    color:#a65fdd;
-  }
-}
-
-@media (prefers-color-scheme: light){
-  .Definition .example{
-    color: inherit !important;
-  }
 }

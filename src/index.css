@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+
 :root {
   line-height: 1.5;
   font-weight: 400;
@@ -18,39 +23,14 @@ body{
   display: flex;
 }
 
-@media (prefers-color-scheme: dark){
-  .adaptive{
-    background-color: #242424;
-    color: #fff;
-  }
-
-  select{
-    background-color: transparent !important;
-    color: inherit !important;
-  }
-
-  .btn{
-    color: #fff;
-  }
-
-  .result{
-    background-color: inherit !important;
-    color: inherit;
-  }
+.roboto{
+  font-family: 'Space Mono', monospace !important;
 }
 
-@media (prefers-color-scheme: light) {
-  .adaptive {
-    background: #FFF;
-    color: #333;
-  }
+.sans{
+  font-family: 'Source Sans', sans-serif;
+}
 
-  .result{
-    background-color: inherit;
-    color: inherit;
-  }
-
-  option{
-    color: #fff !important
-  }
+.serif{
+  font-family: 'PT Serif', serif;
 }

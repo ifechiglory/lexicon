@@ -1,6 +1,5 @@
 import React from "react";
 import Synonym from "./Synonym";
-import Antonym from "./Antonym";
 import "./Definition.css";
 
 const Definition = (props)=> {
@@ -12,11 +11,6 @@ const Definition = (props)=> {
       </p>
       <Synonym
         synonym={props.definition.synonyms}
-        search={props.search}
-        setSearchWord={props.setSearchWord}
-      />
-      <Antonym
-        antonym={props.definition.antonyms}
         search={props.search}
         setSearchWord={props.setSearchWord}
       />

@@ -17,7 +17,7 @@ const Synonym = (props) => {
         <span className="text-muted">Synonyms: 
         {props.synonym.map(function (synonym, index) {
             return (
-              <span className="me-2 text-muted" key={index}> {synonym}</span>
+              <span className="me-1 text-muted syn" key={index}> {synonym}</span>
         
             );
           })}
