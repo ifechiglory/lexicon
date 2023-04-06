@@ -39,7 +39,7 @@ const Lexicon = (props) => {
             <form onSubmit = {(e)=> {search(e.preventDefault());}}>
 
             <div className="input-group rounded-pill p-2">
-                <input type="text" className="form-control p-2" id="searchInput" placeholder="Search for a word" aria-label="Search for a word" aria-describedby="button-addon2" onChange={(e) => {setSearchWord(e.target.value);}}/>
+                <input type="text" className="form-control p-2" autoFocus id="searchInput" placeholder="Search for a word" aria-label="Search for a word" aria-describedby="button-addon2" onChange={(e) => {setSearchWord(e.target.value);}}/>
                 
                 <button className="btn btn-* rounded-end" type="button" id="button-addon2" onClick={() => {search();}}>
                   <IoIosSearch fontSize={20} color={'#a65fdd'}/>
